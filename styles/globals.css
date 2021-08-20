@@ -5,7 +5,7 @@
 /* TODO use tailwind */
 body {
   background-color: black;
-  font-family: sans-serif;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
   color: #354358;
 }
 

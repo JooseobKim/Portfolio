@@ -14,9 +14,9 @@ const Sidebar = () => {
   return (
     <div>
       <Image
-        src="https://res.cloudinary.com/duw5jvlb4/image/upload/v1625541666/coursePlanet/agzduypsodjxgfjcro4k.jpg"
+        src="/images/profile_image.jpg"
         alt="user avatar"
-        className="mx-auto rounded-full"
+        className="object-cover mx-auto rounded-full"
         width={128}
         height={128}
         quality="100"
@@ -30,22 +30,18 @@ const Sidebar = () => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
-        href="/Chaewon1.jpg"
-        download="Chaewon1.jpg"
+        href="/assets/resume.pdf"
       >
         <GiTie className="w-6 h-6" />
-        <span>Download Resume</span>
+        <span>Resume</span>
       </a>
       {/* social icon */}
-      <div className="flex justify-around w-9/12 mx-auto text-green md:w-full">
-        <a href="">
-          <AiFillYoutube className="w-8 h-8 cursor-pointer" />
-        </a>
-        <a href="">
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />
-        </a>
-        <a href="">
-          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
+      <div className="flex justify-center w-9/12 mx-auto md:w-full">
+        <a href="https://github.com/JooseobKim">
+          <div className="flex items-center p-2 space-x-2 border border-gray-500 rounded-md dark:border-white">
+            <AiFillGithub className="w-8 h-8 cursor-pointer" />
+            <span className="font-bold">Github</span>
+          </div>
         </a>
       </div>
 
@@ -54,12 +50,12 @@ const Sidebar = () => {
         className="py-4 my-5 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
-        <div className="flex items-center justify-center space-x-2">
+        <div className="flex items-center justify-center px-2 space-x-2">
           <GoLocation />
-          <span>Seoul, South Korea</span>
+          <span>Gyeonggi-do, Republic of Korea</span>
         </div>
         <p className="my-2">josephkim9942@gmail.com</p>
-        <p className="my-2">01000000000</p>
+        <p className="my-2 tracking-wide">010-5487-9904</p>
       </div>
 
       {/* email button */}

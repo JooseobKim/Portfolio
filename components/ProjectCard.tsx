@@ -20,6 +20,7 @@ const ProjectCard: FunctionComponent<{
     key_techs,
     name,
     id,
+    pdf,
   },
   showDetail,
   setShowDetail,
@@ -29,7 +30,7 @@ const ProjectCard: FunctionComponent<{
       <Image
         src={image_path}
         alt={name}
-        className="cursor-pointer"
+        className="object-cover cursor-pointer"
         onClick={() => setShowDetail(id)}
         width="300"
         height="150"
@@ -57,15 +58,15 @@ const ProjectCard: FunctionComponent<{
             >
               <a
                 href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200 hover:bg-gray-300 dark:hover:bg-gray-700"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
-                href={deployed_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+                href={`/assets/${pdf}`}
               >
-                <AiFillProject /> <span>Project</span>
+                <AiFillProject /> <span>PDF</span>
               </a>
             </motion.div>
           </motion.div>
@@ -74,19 +75,24 @@ const ProjectCard: FunctionComponent<{
               variants={fadeInUp}
               className="mb-3 text-xl font-medium md:text-2xl"
             >
-              {name}
+              <a
+                href={deployed_url}
+                className="px-3 py-1 bg-gray-200 rounded-sm dark:bg-dark-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              >
+                {name}
+              </a>
             </motion.h2>
             <motion.h3 variants={fadeInUp} className="mb-3 font-medium">
               {description}
             </motion.h3>
             <motion.div
               variants={fadeInUp}
-              className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider"
+              className="flex flex-wrap mt-5 text-sm tracking-wider"
             >
               {key_techs.map((tech) => (
                 <span
                   key={tech}
-                  className="px-2 py-1 my-1 bg-gray-200 rounded-sm dark:bg-dark-200"
+                  className="px-2 py-1 my-1 mr-2 bg-gray-200 rounded-sm dark:bg-dark-200"
                 >
                   {tech}
                 </span>

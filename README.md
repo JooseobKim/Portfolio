@@ -1,3 +1,13 @@
+# Portfolio
+
+Next.js와 Typescript 기술을 이용해 만들었으며, tailwind.css와 framer-motion 라이브러리를 사용하였습니다.
+
+해당 포트폴리오는 클론 코딩을 통해 제작되었습니다. 원본 동영상은 아래 링크를 참고바라며, 상세 내용은 저에게 맞게 수정하였습니다.
+
+https://www.youtube.com/watch?v=atebfXxl9B4
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

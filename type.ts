@@ -1,14 +1,8 @@
 import { IconType } from "react-icons";
 
-export interface IService {
-  title: string;
-  about: string;
-  Icon: IconType;
-}
-
-export interface ISkill {
-  name: string;
-  level: string;
+export interface MySkillAndTool {
+  skill: string;
+  color: string;
   Icon: IconType;
 }
 
@@ -21,6 +15,7 @@ export interface IProject {
   github_url: string;
   category: Category[];
   key_techs: string[];
+  pdf: string;
 }
 
-export type Category = "react" | "node" | "express" | "django" | "mongo";
+export type Category = "React" | "Node" | "MongoDB" | "Typescript" | "Next.js";

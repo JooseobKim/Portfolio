@@ -1,206 +1,109 @@
-import { RiComputerLine } from "react-icons/ri";
-import { IProject, IService, ISkill } from "./type";
-import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { MdDeveloperMode } from "react-icons/md";
-import { BsCircleFill } from "react-icons/bs";
+import { IProject, MySkillAndTool } from "./type";
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3 } from "react-icons/di";
+import {
+  SiJavascript,
+  SiReact,
+  SiNodeDotJs,
+  SiMongodb,
+  SiHeroku,
+  SiPostman,
+  SiGit,
+  SiRedux,
+} from "react-icons/si";
 
-export const services: IService[] = [
+export const mySkillAndTool: MySkillAndTool[] = [
   {
-    Icon: RiComputerLine,
-    title: "Frontend Development",
-    about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+    skill: "HTML",
+    color: "e34f26",
+    Icon: AiFillHtml5,
   },
   {
-    Icon: FaServer,
-    title: "Backend  Development",
-    about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+    skill: "CSS",
+    color: "#2965f1",
+    Icon: DiCss3,
   },
   {
-    Icon: AiOutlineApi,
-    title: "API Development",
-    about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+    skill: "Javascript",
+    color: "#f0db4f",
+    Icon: SiJavascript,
   },
   {
-    Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    skill: "React.js",
+    color: "#61dbfb",
+    Icon: SiReact,
   },
   {
-    Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
-    about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+    skill: "Redux",
+    color: "#764abc",
+    Icon: SiRedux,
   },
   {
-    Icon: RiComputerLine,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
-  },
-];
-
-export const languages: ISkill[] = [
-  {
-    name: "Python",
-    level: "70%",
-    Icon: BsCircleFill,
+    skill: "Node.js",
+    color: "#68a063",
+    Icon: SiNodeDotJs,
   },
   {
-    name: "JavaScript",
-    level: "60%",
-    Icon: BsCircleFill,
+    skill: "MongoDB",
+    color: "#4db33d",
+    Icon: SiMongodb,
   },
   {
-    name: "React Native",
-    level: "80%",
-    Icon: BsCircleFill,
+    skill: "Git",
+    color: "#f1502f",
+    Icon: SiGit,
   },
   {
-    name: "React",
-    level: "70%",
-    Icon: BsCircleFill,
+    skill: "Heroku",
+    color: "#6762a6",
+    Icon: SiHeroku,
   },
   {
-    name: "Django",
-    level: "80%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Bootstrap",
-    level: "80%",
-    Icon: BsCircleFill,
-  },
-];
-
-export const tools: ISkill[] = [
-  {
-    name: "Figma",
-    level: "85%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Photoshop",
-    level: "45%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Illustrator",
-    level: "60%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Framer",
-    level: "45%",
-    Icon: BsCircleFill,
+    skill: "Postman",
+    color: "#ef5b25",
+    Icon: SiPostman,
   },
 ];
 
 export const projects: IProject[] = [
   {
     id: 1,
-    name: "COVID Tracker",
+    name: "Course Planet",
     description:
-      "This app shows a statistical view abotu corona virus over the world",
-    image_path: "/images/covid.jpg",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
-    category: ["react"],
-    key_techs: ["React", "Chart.js", "Material UI"],
-  },
-  {
-    id: 2,
-    name: "Algorithm Visualizer",
-    image_path: "/images/algoVisual.png",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
-    category: ["react"],
-    description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
-  },
-  {
-    id: 3,
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
-    category: ["node", "mongo", "react"],
-    description:
-      "Social Media app for developers who can share project,create posts,etc...",
+      "MERN 스택 + Redux를 기반으로 만든 개인 프로젝트입니다. Cloudinary와 Heroku 서비스를 이용하였습니다. Course Planet은 간단한 인터넷 강의 리뷰 평점 사이트입니다.",
+    image_path: "/images/course-planet.png",
+    deployed_url: "https://course-planet.herokuapp.com/",
+    github_url: "https://github.com/JooseobKim/Course-Planet",
+    category: ["React", "Node", "MongoDB"],
     key_techs: [
       "React",
       "Redux",
       "Node",
       "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
+      "MongoDB",
+      "Swiper.js",
+      "Cloudinary",
+      "Heroku",
+      "Styled-Components",
     ],
+    pdf: "course-planet-project.pdf",
   },
   {
-    id: 4,
-    name: "Realtime Chat App",
-    image_path: "/images/chatapp.jpg",
+    id: 2,
+    name: "Portfolio",
+    image_path: "/images/portfolio.png",
     deployed_url: "https://google.com",
     github_url: "https://github.com",
-    category: ["node", "react"],
+    category: ["React", "Next.js", "Typescript"],
     description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  },
-  {
-    id: 5,
-    name: "Tweeter Clone",
-    image_path: "/images/tweetme.jpg",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
-    category: ["django", "react"],
-    description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-    key_techs: ["React", "Django", "Django REST API"],
-  },
-  {
-    id: 6,
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
-    category: ["express"],
-    description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
-  },
-  {
-    id: 7,
-    name: "YouTube using YouTube ",
-    image_path: "/images/youtubeClone.png",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
-    category: ["express"],
-    description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
+      "Next.js와 Typescript 기술을 사용하여 만든 클론 코딩 포트폴리오입니다. Next.js와 Typescript 기술을 사용할 수 있어서 흥미로웠던 클론 코딩이였으며, 포트폴리오의 세부 내용은 저에게 맞게 약간의 수정을 거쳤습니다.",
     key_techs: [
       "React",
-      "Redux",
-      "Firebase Auth",
-      "YouTube API",
-      "Sass",
-      "Bootstrap",
+      "Next.js",
+      "Typescript",
+      "Framer Motion",
+      "Tailwind.css",
     ],
-  },
-  {
-    id: 8,
-    name: "Football App",
-    image_path: "/images/football.png",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
-    category: ["react"],
-    description:
-      "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+    pdf: "resume.pdf",
   },
 ];

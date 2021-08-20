@@ -11,12 +11,19 @@ const NavItem: FunctionComponent<{
   return activeItem !== name ? (
     <Link href={route}>
       <a>
-        <span onClick={() => setActiveItem(name)} className="hover:text-green">
+        <span
+          onClick={() => setActiveItem(name)}
+          className="tracking-wide hover:text-green"
+        >
           {name}
         </span>
       </a>
     </Link>
-  ) : null;
+  ) : (
+    <span className="font-bold tracking-wider border-b-4 text-green border-green">
+      {name}
+    </span>
+  );
 };
 
 const Navbar = () => {
@@ -27,15 +34,12 @@ const Navbar = () => {
   useEffect(() => {
     if (pathname === "/") setActiveItem("About");
     if (pathname === "/projects") setActiveItem("Projects");
-    if (pathname === "/resume") setActiveItem("Resume");
+    if (pathname === "/pdf") setActiveItem("Download PDF");
   }, [pathname]);
 
   return (
-    <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold border-b-4 text-green border-green md:text-2xl">
-        {activeItem}
-      </span>
-      <div className="flex space-x-5 text-lg">
+    <div className="flex justify-center px-5 py-5 border-b dark:border-black">
+      <div className="flex space-x-5 text-xl">
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
@@ -51,8 +55,8 @@ const Navbar = () => {
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
-          name="Resume"
-          route="/resume"
+          name="Download PDF"
+          route="/pdf"
         />
       </div>
     </div>

@@ -1,22 +1,14 @@
 import { FunctionComponent } from "react";
-import { IService } from "../type";
+import { MySkillAndTool } from "../type";
+import Image from "next/image";
 
-const ServiceCard: FunctionComponent<{ service: IService }> = ({
-  service: { Icon, about, title },
+const ServiceCard: FunctionComponent<{ service: MySkillAndTool }> = ({
+  service: { skill, color, Icon },
 }) => {
-  const createMarkup = () => {
-    return {
-      __html: about,
-    };
-  };
-
   return (
-    <div className="flex items-center p-2 space-x-4">
-      <Icon className="w-12 h-12 text-green" />
-      <div>
-        <h4 className="font-bold">{title}</h4>
-        <p dangerouslySetInnerHTML={createMarkup()} />
-      </div>
+    <div className="flex flex-col p-3 space-y-1">
+      <Icon className="w-full h-full" style={{ color }} />
+      <h4 className="font-bold text-center">{skill}</h4>
     </div>
   );
 };
