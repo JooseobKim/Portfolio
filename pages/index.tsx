@@ -18,9 +18,9 @@ const About = () => {
       <Head>
         <title>포트폴리오 | About</title>
       </Head>
-      <h5 className="my-3 font-medium">
+      <h4 className="my-3 font-medium">
         안녕하십니까. 프론트엔드 개발을 공부하고 있는 김주섭입니다.
-      </h5>
+      </h4>
       <p>
         프론트엔드 분야는 트렌드가 수시로 바뀌며 지속적인 공부가 필요한
         분야입니다. 제가 처음 공부를 결심했을 때 사설교육, 국비교육, 독학 세
@@ -41,9 +41,9 @@ const About = () => {
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
-        <h6 className="mb-3 text-xl font-bold tracking-widest">
+        <h4 className="mb-3 text-xl font-bold tracking-widest">
           SKILLS &amp; TOOLS
-        </h6>
+        </h4>
         <motion.div
           className="grid grid-cols-3 gap-4 2xl:grid-cols-7 xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4"
           variants={stagger}
