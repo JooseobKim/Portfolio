@@ -4,6 +4,8 @@ import { IProject } from "../type";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation, stagger } from "../animations";
 
+import Head from "next/head";
+
 const DownloadPdf: FunctionComponent<{ project: IProject }> = ({
   project: { pdf },
 }) => {
@@ -23,6 +25,9 @@ const pdf = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>포트폴리오 | Download PDF</title>
+      </Head>
       <motion.div
         className="flex flex-wrap justify-center min-h-0"
         variants={stagger}

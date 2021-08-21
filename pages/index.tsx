@@ -4,6 +4,8 @@ import { fadeInUp, routeAnimation, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { mySkillAndTool } from "../data";
 
+import Head from "next/head";
+
 const About = () => {
   return (
     <motion.div
@@ -13,6 +15,9 @@ const About = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>포트폴리오 | About</title>
+      </Head>
       <h5 className="my-3 font-medium">
         안녕하십니까. 프론트엔드 개발을 공부하고 있는 김주섭입니다.
       </h5>

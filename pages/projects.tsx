@@ -6,6 +6,8 @@ import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects as projectsData } from "../data";
 import { Category } from "../type";
 
+import Head from "next/head";
+
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("All");
@@ -35,6 +37,9 @@ const Projects = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>포트폴리오 | Projects</title>
+      </Head>
       <ProjectsNavbar filterCategory={filterCategory} active={active} />
       <motion.div
         className="relative grid grid-cols-12 gap-4 my-3"
