@@ -92,8 +92,8 @@ export const projects: IProject[] = [
     id: 2,
     name: "Portfolio",
     image_path: "/images/portfolio.png",
-    deployed_url: "https://google.com",
-    github_url: "https://github.com",
+    deployed_url: "https://portfolio-jooseobkim.vercel.app/",
+    github_url: "https://github.com/JooseobKim/Portfolio",
     category: ["React", "Next.js", "Typescript"],
     description:
       "Next.js와 Typescript 기술을 사용하여 만든 클론 코딩 포트폴리오입니다. Next.js와 Typescript 기술을 사용할 수 있어서 흥미로웠던 클론 코딩이였으며, 포트폴리오의 세부 내용은 저에게 맞게 약간의 수정을 거쳤습니다.",
