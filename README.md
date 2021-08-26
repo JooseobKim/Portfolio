@@ -6,6 +6,10 @@ Next.js와 Typescript 기술을 이용해 만들었으며, tailwind.css와 frame
 
 https://www.youtube.com/watch?v=atebfXxl9B4
 
+## Portfolio Link
+
+https://portfolio-jooseobkim.vercel.app/
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
