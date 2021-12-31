@@ -73,7 +73,7 @@ const ProjectCard: FunctionComponent<{
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.h2
               variants={fadeInUp}
-              className="mb-3 text-xl font-medium md:text-2xl"
+              className="mb-3 text-xl font-medium md:text-2xl break-all"
             >
               <a
                 href={deployed_url}
